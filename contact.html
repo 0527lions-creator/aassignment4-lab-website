@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI-PEL Advanced & Intelligent Power Electronics Lab redesign website." />
+  <title>Contact | AI-PEL Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="AI-PEL home">
+        <span class="logo-mark">AI</span>
+        <span class="logo-text">
+          <strong>AI-PEL</strong>
+          <small>Power Electronics Lab</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="research.html" class="">Research</a></li>
+        <li><a href="projects.html" class="">Projects</a></li>
+        <li><a href="members.html" class="">Members</a></li>
+        <li><a href="publications.html" class="">Publications</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="sub-hero">
+      <p class="eyebrow">Contact & Recruitment</p>
+      <h1>문의 및 모집 안내</h1>
+      <p>관심 분야를 선택하면 본인에게 맞는 연구 방향을 추천해주는 간단한 인터랙션을 제공합니다.</p>
+    </section>
+
+    <section class="section compact">
+      <div class="contact-card reveal">
+        <div>
+          <p class="eyebrow">Recruitment</p>
+          <h2>AI-PEL은 함께 연구할 학생을 환영합니다.</h2>
+          <p>
+            AI-PEL은 석사·박사 과정 학생을 모집하고 있으며, 전력전자에 관심 있는 공학 및 이학 계열 학생을 환영합니다.
+          </p>
+          <div class="contact-info">
+            <p><strong>Email</strong> hppark@kentech.ac.kr</p>
+            <p><strong>Tel</strong> +82-61-320-9267</p>
+            <p><strong>Address</strong> 21 KENTECH-gil, Naju-si, Jeollanam-do, Republic of Korea</p>
+          </div>
+        </div>
+
+        <form class="interest-form" id="interestForm">
+          <h3>관심 분야 추천 폼</h3>
+          <label for="userName">이름</label>
+          <input type="text" id="userName" placeholder="예: 박은규" required />
+
+          <label for="interestSelect">관심 분야</label>
+          <select id="interestSelect" required>
+            <option value="">선택하세요</option>
+            <option value="Power Electronics">Power Electronics</option>
+            <option value="AI Fault Diagnosis">AI Fault Diagnosis</option>
+            <option value="Battery Measurement">Battery Measurement</option>
+            <option value="Renewable Energy">Renewable Energy</option>
+            <option value="Flyback Converter">Flyback Converter</option>
+          </select>
+
+          <label for="message">하고 싶은 말</label>
+          <textarea id="message" rows="4" placeholder="관심 있는 연구 주제나 질문을 적어주세요."></textarea>
+
+          <button class="btn primary full" type="submit">추천 결과 보기</button>
+          <div class="form-result" id="formResult" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <p><strong>Email</strong> <a href="mailto:hppark@kentech.ac.kr">hppark@kentech.ac.kr</a></p>
+      <p><strong>Tel</strong> <a href="tel:+82613209267">+82-61-320-9267</a></p>
+      <p><strong>Address</strong> 21 KENTECH-gil, Naju-si, Jeollanam-do, Republic of Korea</p>
+    </div>
+    <a href="index.html">Back to Home</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

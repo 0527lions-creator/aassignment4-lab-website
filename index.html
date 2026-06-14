@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI-PEL 연구실 정보를 탐색할 수 있는 다크 테마 멀티페이지 웹사이트입니다." />
+  <title>AI-PEL | Advanced & Intelligent Power Electronics Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="AI-PEL home">
+        <span class="logo-mark">AI</span>
+        <span class="logo-text">
+          <strong>AI-PEL</strong>
+          <small>Power Electronics Lab</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="research.html" class="">Research</a></li>
+        <li><a href="projects.html" class="">Projects</a></li>
+        <li><a href="members.html" class="">Members</a></li>
+        <li><a href="publications.html" class="">Publications</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero page-hero home-hero" id="top">
+      <div class="hero-content reveal">
+        <p class="eyebrow home-eyebrow">KENTECH · Advanced & Intelligent Power Electronics Lab</p>
+        <h1 class="home-main-title"><span>AI 기반 전력전자 기술로</span><span>에너지의 미래를 설계</span></h1>
+        <p class="hero-description home-single-line">
+          AI-PEL은 고효율 전력변환 시스템과 AI 기반 전력전자 기술을 연구하는 KENTECH 연구실입니다.
+        </p>
+        <div class="home-keywords" aria-label="Main research keywords">
+          <span>Power Conversion</span>
+          <span>AI Diagnosis</span>
+          <span>Renewable Energy</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="projects.html">프로젝트 보기</a>
+          <a class="btn secondary" href="contact.html">문의하기</a>
+        </div>
+      </div>
+
+      <aside class="hero-card focus-card reveal delay-1" aria-label="Research focus card">
+        <div class="focus-image-wrap">
+          <img src="assets/research-focus.png" alt="PV, ESS, EV, smart device, AI data center, industrial grid connected by power conversion device" />
+        </div>
+        <p class="eyebrow">Research Focus</p>
+        <h2>전력변환 시스템 응용</h2>
+        <p class="focus-description home-single-line">PV·ESS부터 EV·스마트기기·AI 데이터센터·산업 전력망까지 연결합니다.</p>
+        <div class="stats clean-stats">
+          <div><strong>5+</strong><span>Research Topics</span></div>
+          <div><strong>40+</strong><span>Journal Papers</span></div>
+          <div><strong>2026</strong><span>Redesign Project</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section home-about-section">
+      <div class="section-heading centered reveal">
+        <p class="eyebrow">About AI-PEL</p>
+        <h2 class="home-section-title">AI-PEL 연구실 정보를 한눈에 확인하세요.</h2>
+        <p class="home-single-line">
+          연구 분야, 프로젝트, 구성원, 논문, 연락처를 별도 페이지에서 빠르게 탐색할 수 있습니다.
+        </p>
+      </div>
+
+      <div class="intro-grid home-intro-grid">
+        <article class="info-card reveal delay-1">
+          <span class="card-number">01</span>
+          <h3>What We Do</h3>
+          <p class="home-single-line">전력변환·AI 진단·재생에너지 연구.</p>
+          <a class="text-link" href="research.html">Research 보기 →</a>
+        </article>
+        <article class="info-card reveal delay-2">
+          <span class="card-number">02</span>
+          <h3>Project Explorer</h3>
+          <p class="home-single-line">필터로 관심 프로젝트를 빠르게 탐색.</p>
+          <a class="text-link" href="projects.html">Projects 보기 →</a>
+        </article>
+        <article class="info-card reveal delay-3">
+          <span class="card-number">03</span>
+          <h3>Join the Lab</h3>
+          <p class="home-single-line">지원과 문의 정보를 바로 확인.</p>
+          <a class="text-link" href="contact.html">Contact 보기 →</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <p><strong>Email</strong> <a href="mailto:hppark@kentech.ac.kr">hppark@kentech.ac.kr</a></p>
+      <p><strong>Tel</strong> <a href="tel:+82613209267">+82-61-320-9267</a></p>
+      <p><strong>Address</strong> 21 KENTECH-gil, Naju-si, Jeollanam-do, Republic of Korea</p>
+    </div>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

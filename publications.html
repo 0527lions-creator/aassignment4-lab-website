@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI-PEL Advanced & Intelligent Power Electronics Lab redesign website." />
+  <title>Publications | AI-PEL Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="publications">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="AI-PEL home">
+        <span class="logo-mark">AI</span>
+        <span class="logo-text">
+          <strong>AI-PEL</strong>
+          <small>Power Electronics Lab</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="research.html" class="">Research</a></li>
+        <li><a href="projects.html" class="">Projects</a></li>
+        <li><a href="members.html" class="">Members</a></li>
+        <li><a href="publications.html" class="active">Publications</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="sub-hero">
+      <p class="eyebrow">Publications</p>
+      <h1>주요 연구 성과</h1>
+      <p>대표 논문과 연구 성과를 Arc Fault, Battery, Converter 카테고리로 나누어 탐색할 수 있습니다.</p>
+    </section>
+
+    <section class="section compact">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Publication Tabs</p>
+          <h2>카테고리별 논문 보기</h2>
+          <p>버튼을 누르면 관련 분야의 논문만 표시됩니다.</p>
+        </div>
+        <div class="publication-tabs" aria-label="Publication category tabs">
+          <button class="tab-btn active" data-tab="all">All</button>
+          <button class="tab-btn" data-tab="arc">Arc Fault</button>
+          <button class="tab-btn" data-tab="battery">Battery</button>
+          <button class="tab-btn" data-tab="converter">Converter</button>
+        </div>
+      </div>
+
+      <div class="publication-list" id="publicationList">
+        <article class="publication-item reveal" data-topic="battery converter">
+          <span>2026 · Early Access</span>
+          <h3>Online Battery Resistance Estimation Algorithm with Down-Sampling and Preprocessing Filter</h3>
+          <p class="publication-authors"><strong>Authors</strong> M. Kim, S.-J. Kim, J. Hong, and H.-P. Park</p>
+          <p>Embedded DC-DC power converters를 활용한 온라인 배터리 저항 추정 연구</p>
+        </article>
+        <article class="publication-item reveal delay-1" data-topic="converter">
+          <span>2026 · Early Access</span>
+          <h3>Embedded AES Encryption for Secure FSK-Based Talkative Power Conversion</h3>
+          <p class="publication-authors"><strong>Authors</strong> G.-H. Yoon, M. Kim, and H.-P. Park</p>
+          <p>DC-DC 컨버터 기반 보안 전력선 통신 및 전력변환 응용 연구</p>
+        </article>
+        <article class="publication-item reveal delay-2" data-topic="battery converter">
+          <span>2026 · Early Access</span>
+          <h3>Error-Bounded Hybrid FFT-Hilbert Quadrature Mixing for Online Battery Impedance Measurement</h3>
+          <p class="publication-authors"><strong>Authors</strong> J.-H. Ahn and H.-P. Park</p>
+          <p>DC-DC 컨버터에서 배터리 임피던스를 온라인으로 측정하는 신호처리 기술</p>
+        </article>
+        <article class="publication-item reveal" data-topic="arc">
+          <span>2025 · IEEE Access</span>
+          <h3>Design Methodology of Power-Level Modulation for DC Series Arc Fault Detection</h3>
+          <p class="publication-authors"><strong>Authors</strong> W. Kim and H.-P. Park</p>
+          <p>PV 시스템의 전력 손실 최소화와 DC 직렬 아크 고장 검출을 위한 변조 설계</p>
+        </article>
+        <article class="publication-item reveal delay-1" data-topic="arc">
+          <span>2024 · Measurement</span>
+          <h3>AI-enhanced time-frequency domain reflectometry for robust series arc fault detection</h3>
+          <p class="publication-authors"><strong>Authors</strong> H.-P. Park, Gu-Young Kwon, Chun-Kwon Lee, and Seung Jin Chang</p>
+          <p>AI와 시간-주파수 분석을 결합한 DC 그리드 아크 고장 검출 연구</p>
+        </article>
+        <article class="publication-item reveal delay-2" data-topic="converter">
+          <span>2021 · IEEE TIE</span>
+          <h3>Design Methodology of Quasi-Resonant Flyback Converter With a Divided Resonant Capacitor</h3>
+          <p class="publication-authors"><strong>Authors</strong> H.-P. Park and J.-H. Jung</p>
+          <p>분할 공진 커패시터를 사용한 QR 플라이백 컨버터 설계 방법론</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <p><strong>Email</strong> <a href="mailto:hppark@kentech.ac.kr">hppark@kentech.ac.kr</a></p>
+      <p><strong>Tel</strong> <a href="tel:+82613209267">+82-61-320-9267</a></p>
+      <p><strong>Address</strong> 21 KENTECH-gil, Naju-si, Jeollanam-do, Republic of Korea</p>
+    </div>
+    <a href="index.html">Back to Home</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

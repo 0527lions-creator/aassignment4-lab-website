@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI-PEL Advanced & Intelligent Power Electronics Lab redesign website." />
+  <title>Projects | AI-PEL Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="projects">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="AI-PEL home">
+        <span class="logo-mark">AI</span>
+        <span class="logo-text">
+          <strong>AI-PEL</strong>
+          <small>Power Electronics Lab</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="">Home</a></li>
+        <li><a href="research.html" class="">Research</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="members.html" class="">Members</a></li>
+        <li><a href="publications.html" class="">Publications</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="sub-hero">
+      <p class="eyebrow">Interactive Project Explorer</p>
+      <h1>연구 프로젝트 탐색</h1>
+      <p>관심 분야 버튼을 누르면 해당 카테고리의 프로젝트만 표시됩니다. 과제 요구사항을 만족하기 위한 JavaScript 인터랙션입니다.</p>
+    </section>
+
+    <section class="section compact">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Filter Projects</p>
+          <h2>카테고리별 프로젝트 보기</h2>
+          <p>Grid, Battery, AI, Renewable, Hardware 중 원하는 분야를 선택하세요.</p>
+        </div>
+        <div class="filter-buttons" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="grid">Grid</button>
+          <button class="filter-btn" data-filter="battery">Battery</button>
+          <button class="filter-btn" data-filter="ai">AI</button>
+          <button class="filter-btn" data-filter="renewable">Renewable</button>
+          <button class="filter-btn" data-filter="hardware">Hardware</button>
+        </div>
+      </div>
+
+      <div class="project-result" id="projectResult">전체 프로젝트 9개를 표시 중입니다.</div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card reveal" data-category="grid hardware">
+          <span class="tag">Grid</span>
+          <h3>LVDC 배전 시스템 최적화 기술 개발</h3>
+          <p>LVDC 배전 시스템 상용화를 위한 전력 밀도, 전력 품질, 전력선 통신 보안 최적화 기술 개발</p>
+        </article>
+        <article class="project-card reveal delay-1" data-category="battery hardware">
+          <span class="tag">Battery</span>
+          <h3>1MVA급 안전강화형 UPS 표준모델 개발</h3>
+          <p>LiB 기반 대용량·고출력 UPS 시스템의 안전성과 표준 설계 모델을 연구합니다.</p>
+        </article>
+        <article class="project-card reveal delay-2" data-category="ai grid">
+          <span class="tag">AI</span>
+          <h3>AI 플랫폼 기반 스마트 전력변환시스템</h3>
+          <p>AI 플랫폼 기반 기술을 적용해 고효율 스마트 전력변환 시스템을 개발합니다.</p>
+        </article>
+        <article class="project-card reveal" data-category="renewable ai">
+          <span class="tag">Renewable</span>
+          <h3>풍력발전기 AC 직렬 아크고장 검출</h3>
+          <p>Full Power Converter 기반 풍력발전기의 AC 직렬 아크고장 검출 기술을 연구합니다.</p>
+        </article>
+        <article class="project-card reveal delay-1" data-category="grid hardware">
+          <span class="tag">Inverter</span>
+          <h3>Hybrid Active NPC 스마트 인버터 알고리즘</h3>
+          <p>스마트 인버터 운전을 위한 전력변환 제어 알고리즘을 설계합니다.</p>
+        </article>
+        <article class="project-card reveal delay-2" data-category="ai renewable">
+          <span class="tag">AI Diagnosis</span>
+          <h3>DC 직렬 아크 고장 데이터 분석</h3>
+          <p>인공지능 기반 아크 고장 검출을 위한 데이터 전처리 및 알고리즘 분석을 수행합니다.</p>
+        </article>
+        <article class="project-card reveal" data-category="battery hardware">
+          <span class="tag">Cell Cycler</span>
+          <h3>SiC 기반 5V/200A 32채널 Cell Cycler</h3>
+          <p>온라인 EIS 기능을 갖춘 고전류 배터리 셀 사이클러 시스템을 개발합니다.</p>
+        </article>
+        <article class="project-card reveal delay-1" data-category="grid">
+          <span class="tag">Control</span>
+          <h3>3상 계통 연계형 인버터 PLL 기술</h3>
+          <p>계통 연계형 인버터의 제어 자유도 향상을 위한 Phase Lock Loop 원천 기술 개발</p>
+        </article>
+        <article class="project-card reveal delay-2" data-category="hardware">
+          <span class="tag">FPGA</span>
+          <h3>FPGA 기반 양자응용 시스템 제어 전자장치</h3>
+          <p>FPGA와 센싱 보드를 활용한 고속 제어 전자장치를 개발합니다.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <p><strong>Email</strong> <a href="mailto:hppark@kentech.ac.kr">hppark@kentech.ac.kr</a></p>
+      <p><strong>Tel</strong> <a href="tel:+82613209267">+82-61-320-9267</a></p>
+      <p><strong>Address</strong> 21 KENTECH-gil, Naju-si, Jeollanam-do, Republic of Korea</p>
+    </div>
+    <a href="index.html">Back to Home</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
